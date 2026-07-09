@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-electron/
+release/
+build/*.exe
+.env
+.env.local
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.json.bak

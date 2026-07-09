@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-600;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl;
+  }
+
+  .btn-primary {
+    @apply px-5 py-2.5 rounded-xl bg-gradient-to-l from-cyan-500 to-blue-600 text-white font-semibold
+           hover:from-cyan-400 hover:to-blue-500 transition-all duration-200 shadow-lg shadow-blue-900/30
+           active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply px-5 py-2.5 rounded-xl bg-slate-800 text-slate-200 font-semibold border border-slate-700
+           hover:bg-slate-700 transition-all duration-200 active:scale-95;
+  }
+
+  .btn-danger {
+    @apply px-5 py-2.5 rounded-xl bg-red-600/90 text-white font-semibold
+           hover:bg-red-500 transition-all duration-200 active:scale-95;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-100
+           placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1
+           focus:ring-cyan-500 transition-all duration-200;
+  }
+
+  .stat-card {
+    @apply glass-card p-5 relative overflow-hidden;
+  }
+
+  .table-row-hover {
+    @apply transition-colors duration-150 hover:bg-slate-800/50;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite;
+}
