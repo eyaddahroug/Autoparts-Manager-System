@@ -34,15 +34,43 @@ This system was actually deployed and used in a functioning auto parts shop, val
 
 ## Features
 
-- 📊 Dashboard with financial overview
-- 🔩 Parts inventory management with low-stock alerts
-- 🧾 Invoice creation and invoice history
-- 📈 Monthly financial reports
-- 🔍 Deep search across inventory
-- 📁 Excel import/export for inventory data
-- 🔒 Password-protected access to sensitive financial data
-- ⚙️ Configurable settings
-- 🌐 Fully offline — no internet connection required
+- Dashboard with financial overview
+- Parts inventory management with low-stock alerts
+- Invoice creation and invoice history
+- Monthly financial reports
+- Deep search across inventory
+- Excel import/export for inventory data
+- Password-protected access to sensitive financial data
+- Configurable settings
+- Fully offline — no internet connection required
+
+
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Parts Management
+![Parts Management](screenshots/parts-management.png)
+
+### New Invoice
+![New Invoice](screenshots/new-invoice.png)
+
+### Invoices List
+![Invoices List](screenshots/invoices-list.png)
+
+### Deep Search
+![Deep Search](screenshots/deep-search.png)
+
+### Monthly Reports
+![Monthly Reports](screenshots/monthly-reports.png)
+
+### Low Stock Alerts
+![Low Stock Alerts](screenshots/low-stock-alerts.png)
+
+### Settings
+![Settings](screenshots/settings.png) 
+
 
 ## Tech Stack
 
